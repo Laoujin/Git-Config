@@ -4,7 +4,7 @@
 # Initial setup
 # git config --global user.name ""
 # git config --global user.email ""
-# git config --global include.path "~/.common.gitconfig"
+# git config --global include.path "~/.gitconfig.common"
 
 # Create alias
 # git config --global alias.ci commit

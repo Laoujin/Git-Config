@@ -145,9 +145,7 @@
 	wtp = worktree prune
 	wtr = worktree remove
 	# Add worktree in sibling dir: git wta my-feature
-	wta = "!f() { git worktree add \"../$(basename \"$(git rev-parse --show-toplevel)\")-$1\" \"$1\"; }; f"
-	# Add worktree with new branch in sibling dir: git wtab my-feature
-	wtab = "!f() { git worktree add -b \"$1\" \"../$(basename \"$(git rev-parse --show-toplevel)\")-$1\"; }; f"
+	wta = "!f() { git worktree add \"../$(basename \"$(git rev-parse --show-toplevel)\")-$1\" -b \"$1\"; }; f"
 
 	### The rest
 	subm = submodule

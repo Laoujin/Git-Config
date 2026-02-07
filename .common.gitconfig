@@ -126,9 +126,6 @@
 	# remote mine
 	# TODO: set-url: git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
 	remotes = remote -v
-	open = !explorer `git config remote.origin.url`
-	issues = !explorer `git config remote.origin.url`/issues
-	open-dir = !explorer `git config remote.origin.url`/tree/$(git branch-name)/$(git rev-parse --show-prefix ${GIT_PREFIX:-./} | tail -n 1)
 	rao = remote add origin
 	# mr = remote add mine
 	# pm = "!git push -u mine $(git branch-name)"
@@ -206,7 +203,6 @@
 ### Settings
 
 [core]
-	autocrlf = true
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes_global
 	# precomposeunicode = true # Only for Mac OS: fix filenames
@@ -248,36 +244,6 @@
 # core.editor = emacs
 # core.editor = "\"C:\\Program Files\\Sublime Text 3\\subl.exe\" -n -w"
 
-
-
-### Diff tooling
-
-[diff]
-	tool = vsc
-
-[difftool "bc3"]
-	path = C:\\Program Files (x86)\\Beyond Compare 3\\bcomp.exe
-#	cmd = \"c:/program files (x86)/beyond compare 3/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
-
-[difftool "vsc"]
-	cmd = code --wait --diff $LOCAL $REMOTE
-	# cmd = \"C:\\Users\\Wouter\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\Code.cmd\" \"$LOCAL\" \"$REMOTE\" --diff --wait
-
-
-[merge]
-	tool = bc3
-
-[mergetool]
-	prompt = false
-	keepBackup = false
-
-[mergetool "bc3"]
-	path = C:\\Program Files (x86)\\Beyond Compare 3\\bcomp.exe
-	trustExitCode = true
-
-[mergetool "vsc"]
-	# path = C:\\Users\\Wouter\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\Code.cmd
-	cmd = code --wait $MERGED
 
 
 ### Colors

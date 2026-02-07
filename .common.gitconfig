@@ -209,7 +209,7 @@
 	autocrlf = true
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes_global
-	precomposeunicode = true # Only for Mac OS: fix filenames
+	# precomposeunicode = true # Only for Mac OS: fix filenames
 	quotePath = false
 	editor = code --wait
 

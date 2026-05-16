@@ -1,6 +1,3 @@
-[core]
-	autocrlf = true
-
 [alias]
 	open = !explorer `git config remote.origin.url`
 	issues = !explorer `git config remote.origin.url`/issues

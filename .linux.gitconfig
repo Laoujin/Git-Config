@@ -1,6 +1,3 @@
-[core]
-	autocrlf = input
-
 [alias]
 	open = !xdg-open `git config remote.origin.url`
 	issues = !xdg-open `git config remote.origin.url`/issues

@@ -217,6 +217,10 @@
 	quotePath = false
 	longpaths = true
 	editor = code --wait
+	# Line endings: never auto-convert (shared /mnt/c/ checkouts break otherwise).
+	# Per-repo .gitattributes enforces LF normalization.
+	autocrlf = false
+	safecrlf = false
 
 	## -- Pager used for diffs, logs, ...
 	# Short version:

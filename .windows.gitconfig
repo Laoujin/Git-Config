@@ -4,7 +4,7 @@
 	open-dir = !explorer `git config remote.origin.url`/tree/$(git branch-name)/$(git rev-parse --show-prefix ${GIT_PREFIX:-./} | tail -n 1)
 
 [credential]
-	helper = manager-core
+	helper = manager
 	useHttpPath = false
 
 ### Diff tooling

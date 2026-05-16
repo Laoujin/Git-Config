@@ -9,8 +9,8 @@
 # git config --global include.path "~/.common.gitconfig"
 
 [user]
-	email =
-	name =
+	email = woutervs@hotmail.com
+	name = Laoujin
 
 # Windows style path:
 # path = c:\\users\\username\\.common.gitconfig

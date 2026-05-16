@@ -226,6 +226,8 @@
 	# Find out more about configuring and using less:
 	# https://itenium.be/blog/productivity/git-core-pager-less-pager
 
+[init]
+	defaultBranch = main
 
 [push]
 	default = simple

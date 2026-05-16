@@ -215,6 +215,7 @@
 	attributesfile = ~/.gitattributes_global
 	# precomposeunicode = true # Only for Mac OS: fix filenames
 	quotePath = false
+	longpaths = true
 	editor = code --wait
 
 	## -- Pager used for diffs, logs, ...

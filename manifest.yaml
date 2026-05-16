@@ -1,10 +1,5 @@
 gallery: git
 links:
-  - source: .gitconfig
-    target:
-      windows: "%USERPROFILE%\\.gitconfig"
-      linux: "$HOME/.gitconfig"
-      macos: "$HOME/.gitconfig"
   - source: .common.gitconfig
     target:
       windows: "%USERPROFILE%\\.common.gitconfig"

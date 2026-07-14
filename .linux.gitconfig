@@ -1,7 +1,7 @@
 [alias]
-	open = !xdg-open `git config remote.origin.url`
-	issues = !xdg-open `git config remote.origin.url`/issues
-	open-dir = !xdg-open `git config remote.origin.url`/tree/$(git branch-name)/$(git rev-parse --show-prefix ${GIT_PREFIX:-./} | tail -n 1)
+	open = !xdg-open $(git repo-url)
+	issues = !xdg-open $(git repo-url)/issues
+	open-dir = !xdg-open $(git repo-url)/tree/$(git branch-name)/$(git rev-parse --show-prefix ${GIT_PREFIX:-./} | tail -n 1)
 
 [credential "https://github.com"]
 	helper =

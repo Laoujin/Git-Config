@@ -118,6 +118,8 @@
 
 	# push/delete origin
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
+	# Browsable remote url: a .git suffix 404s when other paths are appended to it
+	repo-url = "!git config remote.origin.url | sed -e 's/[.]git$//'"
 	po = "!git push -u origin $(git branch-name)"
 	unpo = "!git push origin :$(git branch-name)"
 	pot = "!git push -u origin $(git branch-name) --tags"

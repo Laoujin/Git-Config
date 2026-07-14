@@ -13,3 +13,5 @@
 
 [includeIf "gitdir:/"]
 	path = ~/.linux.gitconfig
+[credential "https://192.168.200.97"]
+	provider = generic

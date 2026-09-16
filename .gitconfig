@@ -15,3 +15,5 @@
 	path = ~/.linux.gitconfig
 [credential "https://192.168.200.97"]
 	provider = generic
+[safe]
+	directory = %(prefix)///wsl.localhost/Ubuntu/home/wouter/projects

@@ -239,6 +239,9 @@
 	default = simple
 	followTags = true
 
+[pull]
+	rebase = false
+
 [http]
 	sslVerify = true
 
